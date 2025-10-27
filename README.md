@@ -1,53 +1,9 @@
-# 🛠️ Debugging Practice: E-Commerce Application
+Comments for fixes made:
 
-## 🎯 Objective
+For the calculateTotal function changed <= to just <. This caused the loop to run one step to far and resulted in the last iteration to be undefined. Also added input validation. 
 
-Students will apply **debugging tools and strategies** to identify and fix errors in a pre-written JavaScript application.
+For the applyDiscount function updated the function to ensure that the correct data type is entered. Added error messages if data type was not a number and if the number was less that 0 or greater than 1. 
 
-This exercise emphasizes using:
+For the generateReceipt function added validation to ensure total was numeric and that cart items were an array. Added .toFixed(2) to each price for consistancy. Added validation for cart items to ensure each item has a name and price. 
 
-- The **Console**
-- The **Sources tab**
-- The **`debugger` statement**
-- Practical strategies like **isolating problematic code** and **testing edge cases**
-
----
-
-## 🛒 Scenario
-
-You are tasked with debugging a simple **JavaScript application** for an **e-commerce platform**.
-
-The application is supposed to:
-
-- Calculate the **total price** of items in a shopping cart
-- Apply **discounts**
-- Generate a **receipt**
-
-Unfortunately, the application has several bugs that are causing it to malfunction.
-
----
-
-## 🧩 Your Task
-
-You will:
-
-- 🐛 **Identify and fix errors** using browser developer tools
-- 🔍 **Analyze error messages and the call stack** for clues
-- 🧪 **Test edge cases** to make sure the program behaves correctly in different scenarios
-
----
-
-## 🖥️ Instructions
-
-### 1. Set Up the Debugging Environment
-
-- Open the project’s `index.html` file in your **browser**
-- Launch **Developer Tools** using:
-  - `F12`, or  
-  - `Ctrl+Shift+I` (Windows) / `Cmd+Option+I` (Mac)
-  
-From there, use the **Console**, **Sources tab**, and **debugger statements** to investigate and fix issues in the JavaScript code.
-
----
-
-Let me know if you'd like to add starter files, error clues, or a checklist of bugs to find!
+The debugging tools helped to be able to pinpoint problem areas with the original code and make sure that my solution was running correctly. I was able to run the code step by step and see how each line was interacting with the code.
